@@ -219,4 +219,42 @@ Formatar como tabela:
 
 ![Exemplo2](/exemplo/excel3.png)
 
+class No{
+        public No proximo;
+        public No anterior;
+        public Object dado;
+
+        public No(Object obj){
+              proximo = null;
+              anterior=null;
+              dado=obj;
+        }
+
+        No(Object obj, No prox, No ant)
+        {
+              proximo = prox;
+              anterior = ant;
+              dado = obj;
+        }
+}
+const listaNumeros = [4, 6, 2, 77, 1, 0];
+const listaFrutas = ["banana", "maçã", "pera"];
+// 0   1   2   3
+[46, 34, 76, 12]
+
+// removendo 76, o elemento 12 passa a ocupar o índice 2
+// 0  1   2
+[46, 34, 12]
+// 0   1   2   3
+[46, 34, 76, 12]
+
+// inserindo 25, o elemento 12 passa a ocupar o índice 4
+// 0  1   2   3   4
+[46, 34, 76, 25, 12]
+
+const lista = [1, 1, 1, 3, 5, 7, 9];
+const lista = [1, 1, 1, 3, 5, 7, 9];
+const conjunto = new Set(lista);
+console.log(conjunto);
+// Set(5) { 1, 3, 5, 7, 9 }
 
